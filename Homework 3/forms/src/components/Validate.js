@@ -9,7 +9,7 @@ export const fieldValidator = (name, value, callback) => {
            )){
            return callback({[name]:null});
        }
-       return callback({[name]: 'Email must be in correct'})
+       return callback({[name]: 'Invalid email'})
     }
 
     const passwordValidator = () => {
@@ -23,7 +23,7 @@ export const fieldValidator = (name, value, callback) => {
 
     const checkBoxValidator = () => {
        if (value === false) {
-           return callback({[name]:'I agree must be a checked'});
+           return callback({[name]:'You didn\'t agree to Privacy&Policy'});
        }
         return callback({[name]:null});
     }

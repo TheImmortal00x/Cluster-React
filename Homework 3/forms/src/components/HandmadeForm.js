@@ -72,7 +72,7 @@ export const HandmadeForm = () => {
                         </div>
                     }
                 </div>
-                <div className="form-label-group">
+                <div>
                     <input type="password"
                         name="password"
                         value={formState.password}
@@ -86,7 +86,7 @@ export const HandmadeForm = () => {
                         </div>
                     }
                 </div>
-                <div className="form-check">
+                <div>
                     <label>
                         <input type="checkbox"
                             name="checkBoxStatus"
@@ -97,7 +97,7 @@ export const HandmadeForm = () => {
                         </label>
                 </div>
                 {
-                    formState.formErrors.checkBoxStatus === null ? null : <div className="tooltip-valid alert-danger">
+                    formState.formErrors.checkBoxStatus === null ? null : <div>
                         {formState.formErrors.checkBoxStatus}
                     </div>
                 }
